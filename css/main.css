@@ -1,0 +1,80 @@
+@font-face{
+    font-family: wtfeu;
+    src: url(css/U8-Black-web.woff);
+}
+*{
+    cursor: -webkit-image-set(url(../cursor/cursor.png) 1x,url(../cursor/cursor.png) 2x) 14 14,auto!important;
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+header{
+    background-color: #eaeaea;
+}
+header > nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    margin: auto;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+ul#mainul{
+    display: flex;
+}
+ul#mainul li{
+    margin: 10px;
+    Font-size: 15px;
+}
+ul#mainul > :nth-last-child(1){
+    display: none;
+}
+#wtf{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+#wtf > article{
+    margin: 5px;
+    font-size: 5vw;
+    color: white;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+#wtf > article > p:hover{
+    transform: scale(1.2);
+}
+#wtf > :first-child{
+    background-color: red;
+}
+#wtf > :nth-child(2){
+    background-color: green;
+}
+#wtf > :nth-child(3){
+    background-color: yellow;
+}
+#wtf > :nth-child(4){
+    background-color: pink;
+}
+#wtf > :nth-child(5){
+    background-color: brown;
+}
+#wtf > :nth-child(6){
+    background-color: orange;
+}
+@media screen and (max-width: 728px){
+    ul#mainul > li.ordinateu{
+        display: none;
+    }
+    #wtf{
+        grid-template-columns: unset;
+    }
+    ul#mainul > :nth-last-child(1){
+        display: block;
+    }
+}
